@@ -1,0 +1,44 @@
+package CC2_JohnCarlo;
+import java.util.Scanner;
+
+public class lab3 {
+    public static void main(String[] args){
+        Scanner groceryCalc = new Scanner(System.in);
+        
+        System.out.print("Enter the price of cooking oil:");
+        int firstItemPrice = groceryCalc.nextInt();
+        
+        groceryCalc.nextLine();
+        
+        System.out.print("Enter the quantity of cooking oil");
+        int firstItemQuantity = groceryCalc.nextInt();
+        
+        groceryCalc.nextLine();
+        
+        System.out.print("Enter the price of dishwashing detergent");
+        int secondItemPrice = groceryCalc.nextInt();
+        
+        groceryCalc.nextLine();
+        
+        System.out.print("Enter the quantity of dishwashing detergent");
+        int secondItemQuantity = groceryCalc.nextInt();
+        
+        groceryCalc.nextLine();
+        
+        System.out.print("Enter the price of soda");
+        int thirdItemPrice = groceryCalc.nextInt();
+         
+        groceryCalc.nextLine();
+        
+        System.out.print("Enter the quantity of soda");
+        int thirdItemQuantity = groceryCalc.nextInt(); 
+        
+        groceryCalc.nextLine();
+      
+        int subTotal = (firstItemPrice * firstItemQuantity) + (secondItemPrice * secondItemQuantity) + (thirdItemPrice * thirdItemQuantity);
+        int discount = ((subTotal / 100) * 5);
+        int salesTax = (subTotal - discount);
+        int finalTotal = (salesTax + (subTotal - discount));
+        
+        //output is printed on new lines
+        System.out.println("Subtotal")

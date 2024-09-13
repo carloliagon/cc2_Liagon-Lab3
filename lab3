@@ -1,13 +1,19 @@
 package CC2_JohnCarlo;
+// Programmer: John Carlo M. Liagon
+// September 12, 2024
+// Labaratory challenge no. 3:Grocery Shopping Calculator
+
 import java.util.Scanner;
 
 public class lab3 {
     public static void main(String[] args){
+        // Create a Scanner object for user input
         Scanner groceryCalc = new Scanner(System.in);
         
+        // Initialize item price and quantity
         System.out.print("Enter the price of cooking oil:");
         int firstItemPrice = groceryCalc.nextInt();
-        
+        // Generates new line
         groceryCalc.nextLine();
         
         System.out.print("Enter the quantity of cooking oil");
@@ -35,10 +41,19 @@ public class lab3 {
         
         groceryCalc.nextLine();
       
+        // Print variables
         int subTotal = (firstItemPrice * firstItemQuantity) + (secondItemPrice * secondItemQuantity) + (thirdItemPrice * thirdItemQuantity);
         int discount = ((subTotal / 100) * 5);
         int salesTax = (subTotal - discount);
         int finalTotal = (salesTax + (subTotal - discount));
         
         //output is printed on new lines
-        System.out.println("Subtotal")
+        System.out.println("SubTotal: " + subTotal + subTotal);
+        System.out.println("discount: " + (subTotal / 100) * 5);
+        System.out.println("salesTax: " + (subTotal - discount));
+        System.out.println("finalTotal = " + salesTax + (subTotal - discount));
+        
+        
+    
+        }            
+ }

@@ -44,13 +44,13 @@ public class lab3 {
         // Print variables
         int subTotal = (firstItemPrice * firstItemQuantity) + (secondItemPrice * secondItemQuantity) + (thirdItemPrice * thirdItemQuantity);
         int discount = ((subTotal / 100) * 5);
-        int salesTax = (subTotal - discount);
+        int salesTax = (100 / (subTotal - discount) * 12);
         int finalTotal = (salesTax + (subTotal - discount));
         
         //output is printed on new lines
         System.out.println("SubTotal: " + subTotal + subTotal);
         System.out.println("discount: " + (subTotal / 100) * 5);
-        System.out.println("salesTax: " + (subTotal - discount));
+        System.out.println("salesTax: " + 100 / (subTotal - discount) * 12);
         System.out.println("finalTotal = " + salesTax + (subTotal - discount));
         
         

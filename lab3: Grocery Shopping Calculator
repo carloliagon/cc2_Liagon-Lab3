@@ -1,4 +1,3 @@
-package CC2_JohnCarlo;
 // Programmer: John Carlo M. Liagon
 // September 12, 2024
 // Labaratory challenge no. 3:Grocery Shopping Calculator
@@ -12,46 +11,46 @@ public class lab3 {
         
         // Initialize item price and quantity
         System.out.print("Enter the price of cooking oil:");
-        int firstItemPrice = groceryCalc.nextInt();
+        double firstItemPrice = groceryCalc.nextInt();
         // Generates new line
         groceryCalc.nextLine();
         
-        System.out.print("Enter the quantity of cooking oil");
-        int firstItemQuantity = groceryCalc.nextInt();
+        System.out.print("Enter the quantity of cooking oil: ");
+        double firstItemQuantity = groceryCalc.nextInt();
         
         groceryCalc.nextLine();
         
-        System.out.print("Enter the price of dishwashing detergent");
-        int secondItemPrice = groceryCalc.nextInt();
+        System.out.print("Enter the price of dishwashing detergent: ");
+        double secondItemPrice = groceryCalc.nextInt();
         
         groceryCalc.nextLine();
         
-        System.out.print("Enter the quantity of dishwashing detergent");
-        int secondItemQuantity = groceryCalc.nextInt();
+        System.out.print("Enter the quantity of dishwashing detergent: ");
+        double secondItemQuantity = groceryCalc.nextInt();
         
         groceryCalc.nextLine();
         
-        System.out.print("Enter the price of soda");
-        int thirdItemPrice = groceryCalc.nextInt();
+        System.out.print("Enter the price of soda: ");
+        double thirdItemPrice = groceryCalc.nextInt();
          
         groceryCalc.nextLine();
         
-        System.out.print("Enter the quantity of soda");
-        int thirdItemQuantity = groceryCalc.nextInt(); 
+        System.out.print("Enter the quantity of soda: ");
+        double thirdItemQuantity = groceryCalc.nextInt(); 
         
         groceryCalc.nextLine();
       
         // Print variables
-        int subTotal = (firstItemPrice * firstItemQuantity) + (secondItemPrice * secondItemQuantity) + (thirdItemPrice * thirdItemQuantity);
-        int discount = ((subTotal / 100) * 5);
-        int salesTax = (100 / (subTotal - discount) * 12);
-        int finalTotal = (salesTax + (subTotal - discount));
+        double subTotal = (firstItemPrice * firstItemQuantity) + (secondItemPrice * secondItemQuantity) + (thirdItemPrice * thirdItemQuantity);
+        double discount = ((subTotal / 100) * 5);
+        double salesTax = ((subTotal - discount) * 0.12);
+        double finalTotal = (salesTax + (subTotal - discount));
         
         //output is printed on new lines
-        System.out.println("SubTotal: " + subTotal + subTotal);
-        System.out.println("discount: " + (subTotal / 100) * 5);
-        System.out.println("salesTax: " + 100 / (subTotal - discount) * 12);
-        System.out.println("finalTotal = " + salesTax + (subTotal - discount));
+        System.out.println("SubTotal: PHP " + subTotal);
+        System.out.println("Discount: PHP " + discount);
+        System.out.println("SalesTax: PHP " + salesTax);
+        System.out.println("FinalTotal: PHP " + finalTotal);
         
         
     

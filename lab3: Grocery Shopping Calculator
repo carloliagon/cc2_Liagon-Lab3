@@ -47,10 +47,10 @@ public class lab3 {
         double finalTotal = (salesTax + (subTotal - discount));
         
         //output is printed on new lines
-        System.out.println("SubTotal: PHP " + subTotal);
-        System.out.println("Discount: PHP " + discount);
-        System.out.println("SalesTax: PHP " + salesTax);
-        System.out.println("FinalTotal: PHP " + finalTotal);
+        System.out.println("SubTotal: PHP " + subTotal + "0");
+        System.out.println("Discount: PHP " + discount + "0");
+        System.out.println("SalesTax: PHP " + salesTax + "0");
+        System.out.println("FinalTotal: PHP " + finalTotal + "0");
         
         
     
